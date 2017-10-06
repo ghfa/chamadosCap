@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Chamados</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="http://rs945.pbsrc.com/albums/ad292/rodrigo_campos/capgemini_thumb02.png~c200">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<center>
+			<div class="tab">
+				<button class="tablinks" onclick="openNote(event, 'PORTABILIDADE')">PORTABILIDADE</button>
+				<button class="tablinks" onclick="openNote(event, 'SISTEMAS')">SISTEMAS</button>
+				<button class="tablinks" onclick="openNote(event, 'INFRAESTRUTURA')">INFRAESTRUTURA</button>
+				<button class="tablinks" onclick="openNote(event, 'RESET')">RESET</button>
+			</div>
+
+			<form>
+				<div id="PORTABILIDADE" class="tabcontent">
+					<h3>PORTABILIDADE</h3>
+					<div id="infosPort">
+						<div id="descPort">
+							<textarea style="position:absolute;left:-2000px;" id="htmlOutputPort" cols="30" rows="10"></textarea>
+							<textarea cols="60" rows="33" value="Descrição: " class="htmlOutputPort">Descrição: </textarea>							
+						</div>
+						<div id="camposPort">
+							<input type="text" value="Nome: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Login: \" class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Email: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Horário de Trabalho: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Localização: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Telefone: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Departamento: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Base: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Contrato: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Telefone Portado: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="Solicitação: " class="htmlOutputPort" size="50"> <br> <br>
+							<input type="text" value="OS/OC: " class="htmlOutputPort" size="50"> <br> <br>
+						</div>
+					</div>
+					<div id="btnPort">
+						<button type="button" id="copiarTextoPort" onclick="clicar()">Copiar Dados</button>
+						<button type="reset">Limpar</button>
+					</div>
+				</div>
+			</form>
+
+			<form>
+				<div id="SISTEMAS" class="tabcontent">
+					<h3>SISTEMAS</h3>
+					<div id="infosSist">
+						<div id="descSist">
+							<textarea style="position:absolute;left:-2000px;" id="htmlOutputSist" cols="30" rows="10"></textarea>
+							<textarea cols="60" rows="33" value="Descrição: " class="htmlOutputSist">Descrição: </textarea>
+						</div>
+						<div id="camposSist">
+							<input type="text" value="Nome: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Login: \" class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Email: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Horário de Trabalho: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Localização: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Telefone: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Departamento: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Base: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Contrato: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="Solicitação: " class="htmlOutputSist" size="50"> <br> <br>
+							<input type="text" value="OS/OC: " class="htmlOutputSist" size="50"> <br> <br>
+						</div>
+					</div>
+					<div id="btnSist">
+						<button type="button" id="copiarTextoSist" onclick="clicar()">Copiar Dados</button>
+						<button type="reset">Limpar</button>
+					</div>
+				</div>
+			</form>
+
+			<form>
+				<div id="INFRAESTRUTURA" class="tabcontent">
+					<h3>INFRAESTRUTURA</h3>
+					<div id="infosInf">
+						<div id="descInf">
+							<textarea style="position:absolute;left:-2000px;" id="htmlOutputInf" cols="30" rows="10"></textarea>
+							<textarea cols="60" rows="33" value="Descrição: " class="htmlOutputInf">Descrição: </textarea>
+						</div>
+						<div id="camposInf">
+							<input type="text" value="Nome: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Login: \" class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Email: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Horário de Trabalho: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Localização: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Telefone: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Departamento: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Endereço: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Andar: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="IP: " class="htmlOutputInf" size="50"> <br> <br>
+							<input type="text" value="Patrimônio: " class="htmlOutputInf" size="50"> <br> <br>
+						</div>
+					</div>
+					<div id="btnInf">
+						<button type="button" id="copiarTextoInf" onclick="clicar()">Copiar Dados</button>
+						<button type="reset">Limpar</button>	
+					</div>
+				</div>
+			</form>
+
+			<form>
+				<div id="RESET" class="tabcontent">
+					<h3>RESET</h3>
+					<div id="infosRes">
+						<div id="descRes">
+							<textarea style="position:absolute;left:-2000px;" id="htmlOutputRes" cols="30" rows="10"></textarea>
+							<textarea cols="60" rows="33" value="Descrição: " class="htmlOutputRes">Descrição: Usuário solicita reset de senha.</textarea>
+						</div>
+						<div id="camposInf">
+							<input type="text" value="Nome completo: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Login: \" class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Email: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Empresa: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Horário de Trabalho: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Localização: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Telefone: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Departamento: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="RG: OK" class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="CPF: OK" class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Data Nasc.: OK" class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Nome Gestor/Ponto Focal: " class="htmlOutputRes" size="50"> <br> <br>
+							<input type="text" value="Telefone Gestor/Ponto Focal: " class="htmlOutputRes" size="50"> <br> <br>
+						</div>
+					</div>
+					<div id="btnRes">
+						<button type="button" id="copiarTextoRes" onclick="clicar()">Copiar Dados</button>
+						<button type="reset">Limpar</button>	
+					</div>
+				</div>
+			</form>
+		</center>
+
+		<footer>
+			<p id="rodape">Capgemini Araraquara © 2017 | Desenvolvido por Guilherme Alves | Versão 1.1</p>
+		</footer>
+
+		<script src="jquery.js"></script>
+		<script src="copiar.js"></script>
+		<script src="tab.js"></script>
+		<script src="limpar.js"></script>
+	</body>
+</html>

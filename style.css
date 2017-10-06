@@ -1,0 +1,27 @@
+/*FORMATAÇÃO*/
+html { position: relative; height: 100%;}
+body {margin: 0 0 20px; font-family: "Lato", sans-serif; background-color: #274da0; }
+/*DIV BOTÕES TABULAÇÃO*/
+div.tab { margin-top: 20px; }
+div.tab button.active { background-color: #12395f; }
+.tabcontent { display: none; padding: 6px 12px; }
+/*ESTILOS BOTÕES*/
+button { padding: 14px 15px; font-size: 20px; margin-right: 10px; border-radius: 50px; color: #fff; background-color: #0c6ac8; cursor: pointer; outline: none;}
+button:hover { background-color: #276099 }
+/*FOCUS TEXTAREA - INPUT*/
+input:focus, textarea:focus { background-color: #fcffb6; outline: none; }
+/*BORDAS TEXTAREA - INPUT*/
+#descPort, #descSist, #descInf, textarea { border-radius: 8px; }
+#camposPort, #camposSist, #camposInf, input { border-radius: 8px; }
+#descPort, #descSist, #descInf, textarea:hover { border-color: #ff6666; }
+#camposPort, #camposSist, #camposInf, input:hover { border-color: #ff6666; }
+/*DESCRIÇÃO SKILL*/
+h3 { color: #fff; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; }
+/*RODAPÉ*/
+footer {position: absolute; bottom: 0px; width: 100%; height: 20px;}
+footer p { color: #fff; font-size: 8px; text-align: center;}
+/*ALINHAMENTO TEXTAREA - INPUT*/
+#infosPort, #infosSist, #infosInf, #infosRes { height: 500px; width: 925px; }
+#descPort, #descSist, #descInf, #descRes { float: left; }
+#camposPort, #camposSist, #camposInf, #camposRes { float: left; margin-left: 15px; }
+#btnPort, #btnSist, #btnInf, #btnRes { margin-top: 40px; }
