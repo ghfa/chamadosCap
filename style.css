@@ -24,4 +24,4 @@ footer p { color: #fff; font-size: 8px; text-align: center;}
 #infosPort, #infosSist, #infosInf, #infosRes { height: 500px; width: 925px; }
 #descPort, #descSist, #descInf, #descRes { float: left; }
 #camposPort, #camposSist, #camposInf, #camposRes { float: left; margin-left: 15px; }
-#btnPort, #btnSist, #btnInf, #btnRes { margin-top: 40px; }
+#btnPort, #btnSist, #btnInf, #btnRes { margin-top: 50px; }
